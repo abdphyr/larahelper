@@ -1,5 +1,5 @@
 {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "name": "abdumannon/larahelpers",
     "description": "This packe consist of helper classes and functions",
     "autoload": {
@@ -16,5 +16,7 @@
         }
     ],
     "license": "MIT",
-    "require": {}
+    "require": {
+        "php": "^8.0"
+    }
 }
