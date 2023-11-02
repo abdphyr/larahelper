@@ -1,6 +1,6 @@
 {
     "version": "1.0.0",
-    "name": "abd/larahelpers",
+    "name": "abdumannon/larahelpers",
     "description": "This packe consist of helper classes and functions",
     "autoload": {
         "psr-4": {
