@@ -1,0 +1,5 @@
+    public function test_can_example()
+    {
+        $this->{method}Json($this->route({route}), $this->rawData, $this->getHeadersWithToken());
+    }
+

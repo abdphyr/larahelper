@@ -1,0 +1,27 @@
+<?php
+
+namespace App\Repositories;
+
+use App\Models\Example;
+use App\Http\Resources\ExampleResource;
+
+class ExampleRepository extends BaseRepository
+{
+    public function __construct(Example $modelInstance)
+    {
+        $this->model = $modelInstance;
+        $this->resource = ExampleResource::class;
+
+        $this->likableFields = [
+            'name',
+        ];
+
+        $this->equalableFields = [
+            'id',
+            'created_by',
+            'updated_by',
+        ];
+
+        parent::__construct();
+    }
+}

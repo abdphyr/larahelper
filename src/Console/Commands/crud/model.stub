@@ -1,0 +1,17 @@
+<?php
+
+namespace App\Models;
+{usings}
+class Example extends BaseModel
+{{using}{factory}{translate}
+    protected $guarded = [];
+
+    protected $fillable = [
+        'id',
+        'name',
+        'created_at',
+        'updated_at',
+        'created_by',
+        'updated_by'
+    ];
+}

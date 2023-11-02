@@ -1,0 +1,24 @@
+    public function test_can__example___200()
+    {
+        $parameters = {parameters};
+        $structure = {structure};
+        {fragment}
+        $this->getJson($this->route({route}, $parameters), $this->getHeadersWithToken())
+            ->assertJsonStructure($structure){fragmentMethod}
+            ->assertStatus(200);
+    }
+
+    public function test_can__example___401()
+    {
+        $parameters = {parameters};
+        $this->getJson($this->route({route}, $parameters), [])
+            ->assertStatus(401);
+    }
+    
+    public function test_can__example___404()
+    {
+        $parameters = {parameters};
+        $this->getJson($this->route({route}, $parameters), $this->getHeadersWithToken())
+            ->assertStatus(404);
+    }
+

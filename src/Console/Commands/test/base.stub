@@ -1,0 +1,11 @@
+<?php
+
+namespace Tests\Feature;
+
+use App\Models\Example;
+use Tests\Feature\Base;
+
+class ExampleTest extends Base
+{
+{methods}
+}

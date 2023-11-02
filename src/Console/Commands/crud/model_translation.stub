@@ -1,0 +1,19 @@
+<?php
+
+namespace App\Models;
+
+use App\Traits\NewFactoryTrait; 
+use Database\Factories\ExampleTranslationFactory;
+
+class ExampleTranslation extends BaseTranslation
+{
+    use NewFactoryTrait;
+
+    protected static string $model_factory = ExampleTranslationFactory::class;
+
+    protected $table = 'example_translations';
+
+    public $timestamps = false;
+
+    protected $guarded = [];
+}

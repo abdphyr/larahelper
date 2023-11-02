@@ -1,0 +1,20 @@
+{
+    "version": "1.0.0",
+    "name": "abd/larahelpers",
+    "description": "This packe consist of helper classes and functions",
+    "autoload": {
+        "psr-4": {
+            "Abd\\Larahelpers\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Abdumannon Norboyev"
+        }
+    ],
+    "license": "MIT",
+    "require": {}
+}

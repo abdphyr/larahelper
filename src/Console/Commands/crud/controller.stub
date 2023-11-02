@@ -1,0 +1,41 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Services\ExampleService;
+use App\Http\Requests\IndexRequest;
+use App\Http\Requests\ExampleUpsertRequest;
+
+class ExampleController extends Controller
+{
+
+    public function __construct(
+        protected ExampleService $exampleService
+    ) {
+    }
+
+    public function index(IndexRequest $indexRequest)
+    {
+        return $this->exampleService->getList($indexRequest->validated());
+    }
+
+    public function store(ExampleUpsertRequest $upsertRequest)
+    {
+        return $this->exampleService->create($upsertRequest->validated());
+    }
+
+    public function show($id)
+    {
+        return $this->exampleService->show($id);
+    }
+
+    public function update($id, ExampleUpsertRequest $upsertRequest)
+    {
+        return $this->exampleService->edit($id, $upsertRequest->validated());
+    }
+
+    public function destroy($id)
+    {
+        return $this->exampleService->delete($id);
+    }
+}

@@ -1,0 +1,23 @@
+    public function test_can__example___200()
+    {
+        $parameters = {parameters};
+        $data = {data};
+        $this->putJson($this->route({route}, $parameters), $data, $this->getHeadersWithToken())
+            ->assertStatus(201);
+    }
+
+    public function test_can__example___422()
+    {
+        $parameters = {parameters};
+        $data = {data};
+        $this->putJson($this->route({route}, $parameters), $data, $this->getHeadersWithToken())
+            ->assertStatus(422);
+    }
+
+    public function test_can__example___404()
+    {
+        $parameters = {parameters};
+        $data = {data};
+        $this->putJson($this->route({route}, $parameters), $data, $this->getHeadersWithToken())
+            ->assertStatus(404);
+    }

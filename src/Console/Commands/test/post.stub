@@ -1,0 +1,13 @@
+    public function test_can__example___201()
+    {
+        $data = {data};
+        $this->postJson($this->route({route}), $data, $this->getHeadersWithToken())
+            ->assertStatus(201);
+    }
+
+    public function test_can__example___422()
+    {
+        $data = {data};
+        $this->postJson($this->route({route}), $data, $this->getHeadersWithToken())
+            ->assertStatus(422);
+    }
